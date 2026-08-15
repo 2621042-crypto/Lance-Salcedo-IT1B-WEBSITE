@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Life & Works of Jose Rizal - UB Integration</title>
+    <title>UB Core Values & BEST Attributes - Lance Noah Salcedo</title>
     <style>
         :root {
             --primary-red: #800000;
-            --dark-red: #500000;
             --bg-light: #f9f9f9;
             --text-dark: #1a1a1a;
             --text-muted: #555555;
@@ -27,97 +26,40 @@
             line-height: 1.6;
         }
 
-        /* Header Layout */
         header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             padding: 20px;
             background: #ffffff;
             border-bottom: 1px solid var(--border-color);
+            text-align: center;
         }
 
         .brand-title {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: bold;
             color: var(--primary-red);
         }
 
-        .brand-subtitle {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 40px 20px;
-            max-width: 600px;
+        .container {
+            max-width: 700px;
             margin: 0 auto;
+            padding: 20px;
         }
 
-        .hero-tag {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-bottom: 10px;
-        }
-
-        .hero h1 {
-            font-size: 2.2rem;
-            font-weight: 900;
-            line-height: 1.2;
-            color: #000;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 1rem;
-            color: var(--text-muted);
-            margin-bottom: 30px;
-        }
-
-        .btn-container {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .btn {
-            display: block;
-            width: 100%;
-            padding: 16px;
-            border-radius: 30px;
-            text-align: center;
-            font-weight: bold;
-            text-decoration: none;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
-        }
-
-        .btn-primary {
-            background-color: var(--primary-red);
-            color: #ffffff;
-            border: none;
-        }
-
-        .btn-outline {
-            background-color: transparent;
+        .section-title {
+            font-size: 2rem;
             color: var(--primary-red);
-            border: 2px solid var(--primary-red);
-        }
-
-        /* Core Values / Cards Section */
-        .section-padding {
-            padding: 40px 20px;
-            max-width: 600px;
-            margin: 0 auto;
+            margin: 30px 0 20px 0;
+            border-bottom: 2px solid var(--primary-red);
+            padding-bottom: 5px;
         }
 
         .card {
             background: #ffffff;
             border: 1px solid var(--border-color);
             border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
         .badge {
@@ -128,146 +70,311 @@
             font-weight: bold;
             border: 1px solid var(--primary-red);
             color: var(--primary-red);
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
-        .card h2 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
         }
 
         .grid-2 {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 20px;
+            gap: 15px;
+            margin-bottom: 20px;
         }
 
-        @media (min-width: 480px) {
+        @media (min-width: 600px) {
             .grid-2 {
                 grid-template-columns: 1fr 1fr;
             }
         }
 
-        .column h3 {
-            font-size: 0.8rem;
+        .sub-box h4 {
+            font-size: 0.85rem;
             text-transform: uppercase;
             color: var(--primary-red);
-            letter-spacing: 1px;
-            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
         }
 
-        .column p {
+        .sub-box p {
             font-size: 0.9rem;
             color: var(--text-muted);
         }
 
-        /* Footer Section */
+        /* Photo Gallery Styling */
+        .photo-section-title {
+            font-size: 1rem;
+            font-weight: bold;
+            color: var(--text-dark);
+            margin: 15px 0 10px 0;
+            border-top: 1px solid var(--border-color);
+            padding-top: 15px;
+        }
+
+        .gallery-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .photo-card {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            opacity: 0.9;
+        }
+
+        .photo-label {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .photo-label span {
+            color: #f1c40f;
+            margin-right: 5px;
+        }
+
         footer {
-            background-color: #0d0d0d;
+            background-color: #1a1a1a;
             color: #ffffff;
-            padding: 40px 20px;
+            padding: 30px 20px;
+            margin-top: 40px;
             font-size: 0.85rem;
         }
 
         .footer-content {
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
         }
 
-        .footer-title {
-            color: #f1c40f;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 10px;
+        .student-info p {
+            margin-bottom: 5px;
+            color: #ccc;
         }
 
-        .footer-links {
-            list-style: none;
-            margin: 20px 0;
-        }
-
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-
-        .footer-links a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        .student-info {
-            border-top: 1px solid #333;
-            padding-top: 20px;
-            margin-top: 20px;
-        }
-
-        .student-info span {
-            color: #aaa;
+        .student-info strong {
+            color: #fff;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
     <header>
-        <div>
-            <div class="brand-title">University of Batangas</div>
-            <div class="brand-subtitle">Jose Rizal Course Project</div>
-        </div>
+        <div class="brand-title">University of Batangas</div>
+        <div>Jose Rizal Course • IT Integration</div>
     </header>
 
-    <!-- Main Hero Section -->
-    <main class="hero">
-        <div class="hero-tag">Rizal Course • IT Integration • UB</div>
-        <h1>The Life & Works of Jose Rizal</h1>
-        <p>Understanding Rizal through the values, attributes, and perspective of an Information Technology student.</p>
+    <div class="container">
         
-        <div class="btn-container">
-            <a href="#core-values" class="btn btn-primary">EXPLORE CORE VALUES</a>
-            <a href="#best" class="btn btn-outline">EXPLORE BEST</a>
-        </div>
-    </main>
-
-    <!-- Core Value Section Example -->
-    <section id="core-values" class="section-padding">
+        <!-- ================= CORE VALUES ================= -->
+        <h2 class="section-title">UB Core Values</h2>
+        
+        <!-- 1. Faith in God -->
         <div class="card">
             <span class="badge">01 / CORE VALUE</span>
-            <h2>Faith in God</h2>
-            
+            <h3>Faith in God</h3>
             <div class="grid-2">
-                <div class="column">
-                    <h3>Meaning</h3>
-                    <p>Faith in God is the foundation of a UBian's spiritual life. It guides moral decisions and provides inner strength during challenges.</p>
+                <div class="sub-box">
+                    <h4>Meaning</h4>
+                    <p>Faith in God is the foundation of a UBian's spiritual life. It is the deep trust and belief in a higher power that guides moral decisions, fosters humility, and provides inner strength during challenges.</p>
                 </div>
-                <div class="column">
-                    <h3>Connection to IT</h3>
-                    <p>Translates into ethical technology development, ensuring we build algorithms and manage data with integrity and respect.</p>
+                <div class="sub-box">
+                    <h4>Connection to IT</h4>
+                    <p>Translates into ethical technology development. As we build algorithms and manage user data, a spiritual foundation reminds us that technology must serve humanity's well-being and uphold truth.</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
+            <div class="photo-section-title">Photo Documentation</div>
+            <div class="gallery-grid">
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 1"><div class="photo-label"><span>01</span> Photo 1</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 2"><div class="photo-label"><span>02</span> Photo 2</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 3"><div class="photo-label"><span>03</span> Photo 3</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 4"><div class="photo-label"><span>04</span> Photo 4</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 5"><div class="photo-label"><span>05</span> Photo 5</div></div>
+            </div>
+        </div>
+
+        <!-- 2. Love of Wisdom -->
+        <div class="card">
+            <span class="badge">02 / CORE VALUE</span>
+            <h3>Love of Wisdom</h3>
+            <div class="grid-2">
+                <div class="sub-box">
+                    <h4>Meaning</h4>
+                    <p>Love of Wisdom signifies the relentless pursuit of knowledge, critical thinking, and intellectual excellence. It urges UBians to look beyond the surface, question assumptions, and continuously seek truth.</p>
+                </div>
+                <div class="sub-box">
+                    <h4>Connection to IT</h4>
+                    <p>Information Technology evolves daily. A love of wisdom drives IT professionals to engage in continuous learning, mastering new frameworks, security protocols, system architectures, and logical reasoning.</p>
+                </div>
+            </div>
+
+            <div class="photo-section-title">Photo Documentation</div>
+            <div class="gallery-grid">
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 1"><div class="photo-label"><span>01</span> Photo 1</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 2"><div class="photo-label"><span>02</span> Photo 2</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 3"><div class="photo-label"><span>03</span> Photo 3</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 4"><div class="photo-label"><span>04</span> Photo 4</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 5"><div class="photo-label"><span>05</span> Photo 5</div></div>
+            </div>
+        </div>
+
+        <!-- 3. Service to Fellowmen -->
+        <div class="card">
+            <span class="badge">03 / CORE VALUE</span>
+            <h3>Service to Fellowmen</h3>
+            <div class="grid-2">
+                <div class="sub-box">
+                    <h4>Meaning</h4>
+                    <p>Service to Fellowmen defines a UBian's purpose as being a helper, builder, and defender of others. It means using one's talents and skills to uplift communities and address societal needs.</p>
+                </div>
+                <div class="sub-box">
+                    <h4>Connection to IT</h4>
+                    <p>IT is a tool for social good. Whether building civic-tech platforms, creating assistive medical systems, or developing technology to simplify daily human life, IT serves to solve real-world problems.</p>
+                </div>
+            </div>
+
+            <div class="photo-section-title">Photo Documentation</div>
+            <div class="gallery-grid">
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 1"><div class="photo-label"><span>01</span> Photo 1</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 2"><div class="photo-label"><span>02</span> Photo 2</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 3"><div class="photo-label"><span>03</span> Photo 3</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 4"><div class="photo-label"><span>04</span> Photo 4</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 5"><div class="photo-label"><span>05</span> Photo 5</div></div>
+            </div>
+        </div>
+
+        <!-- ================= BEST ATTRIBUTES ================= -->
+        <h2 class="section-title">UB Attributes (BEST)</h2>
+
+        <!-- Builder -->
+        <div class="card">
+            <span class="badge">01 / BEST ATTRIBUTE</span>
+            <h3>Builder and Innovator of Knowledge</h3>
+            <div class="grid-2">
+                <div class="sub-box">
+                    <h4>Meaning</h4>
+                    <p>This attribute encourages UBians to create new ideas, construct functional products, and pioneer innovative solutions instead of merely consuming existing knowledge.</p>
+                </div>
+                <div class="sub-box">
+                    <h4>Connection to IT</h4>
+                    <p>In IT, innovation is the default state. Students must transition from being coders into software engineers who design new algorithms, architect databases, and build original digital tools.</p>
+                </div>
+            </div>
+
+            <div class="photo-section-title">Photo Documentation</div>
+            <div class="gallery-grid">
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 1"><div class="photo-label"><span>01</span> Photo 1</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 2"><div class="photo-label"><span>02</span> Photo 2</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 3"><div class="photo-label"><span>03</span> Photo 3</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 4"><div class="photo-label"><span>04</span> Photo 4</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 5"><div class="photo-label"><span>05</span> Photo 5</div></div>
+            </div>
+        </div>
+
+        <!-- Efficient -->
+        <div class="card">
+            <span class="badge">02 / BEST ATTRIBUTE</span>
+            <h3>Efficient Professional & Effective Communicator</h3>
+            <div class="grid-2">
+                <div class="sub-box">
+                    <h4>Meaning</h4>
+                    <p>UBians are trained to carry themselves with professional excellence and convey ideas clearly, persuasively, and with empathy across different mediums.</p>
+                </div>
+                <div class="sub-box">
+                    <h4>Connection to IT</h4>
+                    <p>An IT professional cannot work in a silo. We must translate complex technical jargon into clear business requirements for clients, write clean documentation, and collaborate in agile teams.</p>
+                </div>
+            </div>
+
+            <div class="photo-section-title">Photo Documentation</div>
+            <div class="gallery-grid">
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 1"><div class="photo-label"><span>01</span> Photo 1</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 2"><div class="photo-label"><span>02</span> Photo 2</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 3"><div class="photo-label"><span>03</span> Photo 3</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 4"><div class="photo-label"><span>04</span> Photo 4</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 5"><div class="photo-label"><span>05</span> Photo 5</div></div>
+            </div>
+        </div>
+
+        <!-- Social -->
+        <div class="card">
+            <span class="badge">03 / BEST ATTRIBUTE</span>
+            <h3>Social, Moral, and Global-minded Citizen</h3>
+            <div class="grid-2">
+                <div class="sub-box">
+                    <h4>Meaning</h4>
+                    <p>Demands that UBians recognize their place in the global community while maintaining strict moral integrity and advocating for social justice locally.</p>
+                </div>
+                <div class="sub-box">
+                    <h4>Connection to IT</h4>
+                    <p>IT systems cross borders instantly. As global citizens, we consider the ethical implications of data mining, respect global privacy laws (such as GDPR), and design secure digital ecosystems.</p>
+                </div>
+            </div>
+
+            <div class="photo-section-title">Photo Documentation</div>
+            <div class="gallery-grid">
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 1"><div class="photo-label"><span>01</span> Photo 1</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 2"><div class="photo-label"><span>02</span> Photo 2</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 3"><div class="photo-label"><span>03</span> Photo 3</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 4"><div class="photo-label"><span>04</span> Photo 4</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 5"><div class="photo-label"><span>05</span> Photo 5</div></div>
+            </div>
+        </div>
+
+        <!-- Transformed -->
+        <div class="card">
+            <span class="badge">04 / BEST ATTRIBUTE</span>
+            <h3>Transformed Lifelong Learner</h3>
+            <div class="grid-2">
+                <div class="sub-box">
+                    <h4>Meaning</h4>
+                    <p>Emphasizes a perpetual process of self-improvement, adaptation, and transformation in response to an ever-changing world.</p>
+                </div>
+                <div class="sub-box">
+                    <h4>Connection to IT</h4>
+                    <p>A programming language or framework popular today may be replaced tomorrow. An IT graduate must possess the meta-skill of "learning how to learn" to view change as an opportunity to adapt.</p>
+                </div>
+            </div>
+
+            <div class="photo-section-title">Photo Documentation</div>
+            <div class="gallery-grid">
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 1"><div class="photo-label"><span>01</span> Photo 1</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 2"><div class="photo-label"><span>02</span> Photo 2</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 3"><div class="photo-label"><span>03</span> Photo 3</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 4"><div class="photo-label"><span>04</span> Photo 4</div></div>
+                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 5"><div class="photo-label"><span>05</span> Photo 5</div></div>
+            </div>
+        </div>
+
+    </div>
+
     <footer>
         <div class="footer-content">
-            <div class="footer-title">University of Batangas</div>
-            <p>Fostering Spirit, Intellect, and Purpose in every student.</p>
-            
-            <ul class="footer-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Rizal</a></li>
-                <li><a href="#">UB Core Values</a></li>
-                <li><a href="#">References</a></li>
-            </ul>
-
             <div class="student-info">
-                <p><strong>Name:</strong> <span>Ronald O Masongsong Jr</span></p>
-                <p><strong>Course:</strong> <span>BSIT</span></p>
-                <p><strong>Section:</strong> <span>1B</span></p>
-                <p><strong>A.Y.:</strong> <span>2026-2027</span></p>
+                <p><strong>Name:</strong> Lance Noah Salcedo</p>
+                <p><strong>Course & Section:</strong> BSIT - IT1B</p>
+                <p><strong>Project:</strong> Rizal Course IT Integration</p>
+                <p><strong>A.Y.:</strong> 2026-2027</p>
             </div>
         </div>
     </footer>
 
 </body>
-</html>
