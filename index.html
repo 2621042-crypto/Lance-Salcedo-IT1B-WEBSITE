@@ -3,378 +3,598 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UB Core Values & BEST Attributes - Lance Noah Salcedo</title>
+
+    <title>University of Batangas - Core Values and Attributes</title>
+
     <style>
-        :root {
-            --primary-red: #800000;
-            --bg-light: #f9f9f9;
-            --text-dark: #1a1a1a;
-            --text-muted: #555555;
-            --border-color: #e0e0e0;
-        }
 
         * {
             box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            scroll-behavior: smooth;
         }
 
         body {
-            background-color: var(--bg-light);
-            color: var(--text-dark);
-            line-height: 1.6;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            color: #222;
         }
+
+        /* =========================
+           HEADER
+        ========================== */
 
         header {
-            padding: 20px;
-            background: #ffffff;
-            border-bottom: 1px solid var(--border-color);
+            background-color: #800000;
+            color: white;
             text-align: center;
+            padding: 60px 20px;
         }
 
-        .brand-title {
-            font-size: 1.2rem;
+        header h1 {
+            margin: 0;
+            font-size: 45px;
+            letter-spacing: 1px;
+        }
+
+        header h2 {
+            margin: 10px 0;
+            font-size: 25px;
+            font-weight: normal;
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================== */
+
+        nav {
+            background-color: #5c0000;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 15px;
             font-weight: bold;
-            color: var(--primary-red);
         }
 
-        .container {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 20px;
+        nav a:hover {
+            text-decoration: underline;
         }
 
-        .section-title {
-            font-size: 2rem;
-            color: var(--primary-red);
-            margin: 30px 0 20px 0;
-            border-bottom: 2px solid var(--primary-red);
-            padding-bottom: 5px;
-        }
 
-        .card {
-            background: #ffffff;
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
+        /* =========================
+           INTRODUCTION
+        ========================== */
 
-        .badge {
-            display: inline-block;
-            padding: 4px 12px;
+        .intro {
+            max-width: 950px;
+            margin: 35px auto;
+            padding: 35px;
+            background-color: white;
             border-radius: 15px;
-            font-size: 0.75rem;
-            font-weight: bold;
-            border: 1px solid var(--primary-red);
-            color: var(--primary-red);
-            margin-bottom: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.10);
         }
 
-        .card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 12px;
+        .intro h2 {
+            color: #800000;
+            font-size: 30px;
+            margin-top: 0;
         }
 
-        .grid-2 {
+        .intro p {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+
+        /* =========================
+           SECTIONS
+        ========================== */
+
+        .section {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+        }
+
+        .section h2 {
+            color: #800000;
+            font-size: 25px;
+            margin-top: 0;
+            border-left: 6px solid #800000;
+            padding-left: 12px;
+        }
+
+        .description {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           PICTURES
+        ========================== */
+
+        .pictures {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(5, 1fr);
             gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        @media (min-width: 600px) {
-            .grid-2 {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        .sub-box h4 {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            color: var(--primary-red);
-            letter-spacing: 0.5px;
-            margin-bottom: 5px;
-        }
-
-        .sub-box p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        /* Photo Gallery Styling */
-        .photo-section-title {
-            font-size: 1rem;
-            font-weight: bold;
-            color: var(--text-dark);
-            margin: 15px 0 10px 0;
-            border-top: 1px solid var(--border-color);
-            padding-top: 15px;
-        }
-
-        .gallery-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
+            margin-top: 25px;
+            align-items: start;
         }
 
         .photo-card {
-            position: relative;
-            border-radius: 8px;
-            overflow: hidden;
-            background: #000;
+            display: flex;
+            flex-direction: column;
+            background-color: #fafafa;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 10px;
         }
 
-        .photo-card img {
+        .pictures img {
             width: 100%;
-            height: auto;
-            display: block;
-            opacity: 0.9;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 10px;
+            background-color: #ddd;
+            transition: 0.3s;
         }
 
-        .photo-label {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            background: rgba(0, 0, 0, 0.6);
-            color: #fff;
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: bold;
+        .pictures img:hover {
+            transform: scale(1.04);
         }
 
-        .photo-label span {
-            color: #f1c40f;
-            margin-right: 5px;
+        .reflection-text {
+            font-size: 13px;
+            color: #444;
+            margin-top: 10px;
+            line-height: 1.5;
+            text-align: justify;
         }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
 
         footer {
-            background-color: #1a1a1a;
-            color: #ffffff;
-            padding: 30px 20px;
-            margin-top: 40px;
-            font-size: 0.85rem;
+            margin-top: 50px;
+            background-color: #800000;
+            color: white;
+            text-align: center;
+            padding: 30px;
         }
 
-        .footer-content {
-            max-width: 700px;
-            margin: 0 auto;
+        footer p {
+            margin: 5px;
         }
 
-        .student-info p {
-            margin-bottom: 5px;
-            color: #ccc;
+
+        /* =========================
+           MOBILE DESIGN
+        ========================== */
+
+        @media (max-width: 800px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            header h2 {
+                font-size: 20px;
+            }
+
+            nav {
+                padding: 12px 5px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 13px;
+            }
+
+            .section {
+                margin: 20px 12px;
+                padding: 20px;
+            }
+
+            .intro {
+                margin: 20px 12px;
+                padding: 25px;
+            }
+
+            .pictures {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .pictures img {
+                height: 140px;
+            }
         }
 
-        .student-info strong {
-            color: #fff;
-        }
     </style>
 </head>
+
+
 <body>
 
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
     <header>
-        <div class="brand-title">University of Batangas</div>
-        <div>Jose Rizal Course • IT Integration</div>
+
+        <h1>University of Batangas</h1>
+
+        <h2>Lipa City Campus</h2>
+
+        <p>Core Values and Attributes</p>
+
     </header>
 
-    <div class="container">
-        
-        <!-- ================= CORE VALUES ================= -->
-        <h2 class="section-title">UB Core Values</h2>
-        
-        <!-- 1. Faith in God -->
-        <div class="card">
-            <span class="badge">01 / CORE VALUE</span>
-            <h3>Faith in God</h3>
-            <div class="grid-2">
-                <div class="sub-box">
-                    <h4>Meaning</h4>
-                    <p>Faith in God is the foundation of a UBian's spiritual life. It is the deep trust and belief in a higher power that guides moral decisions, fosters humility, and provides inner strength during challenges.</p>
-                </div>
-                <div class="sub-box">
-                    <h4>Connection to IT</h4>
-                    <p>Translates into ethical technology development. As we build algorithms and manage user data, a spiritual foundation reminds us that technology must serve humanity's well-being and uphold truth.</p>
-                </div>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav>
+
+        <a href="#faith">Faith</a>
+
+        <a href="#wisdom">Wisdom</a>
+
+        <a href="#service">Service</a>
+
+        <a href="#builder">Builder</a>
+
+        <a href="#communication">Communicator</a>
+
+        <a href="#global">Global Citizen</a>
+
+        <a href="#learner">Lifelong Learner</a>
+
+    </nav>
+
+
+    <!-- =========================
+         CORE VALUES INTRO
+    ========================== -->
+
+    <div class="intro">
+
+        <h2>UB Core Values</h2>
+
+        <p>
+            The University of Batangas promotes values that guide
+            students in their academic, personal, and social development.
+            These values help students become responsible and meaningful
+            members of society.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         1. FAITH IN GOD
+    ========================== -->
+
+    <div class="section" id="faith">
+
+        <h2>1. Faith in God (Spirit)</h2>
+
+        <p class="description">
+
+            Faith in God represents spirituality, trust, and
+            devotion. It encourages students to strengthen their
+            relationship with God and live according to good values.
+
+        </p>
+
+
+        <div class="pictures">
+
+            <!-- PICTURE 1 (MAY REFLECTION) -->
+            <div class="photo-card">
+                <img src="images/faith1.jpg" alt="Faith in God - Praying in Church">
+                <p class="reflection-text">
+                    Standing before the Santo Entierro and gently touching the sacred cloth enclosed in the glass casing creates a deeply personal moment of quiet connection. Away from the noise and pressure of daily life, this physical gesture represents a total surrender of my worries, fears, and exhaustion to God. As I gaze inside, I am reminded of the immense sacrifice He made for us, which instills a renewed sense of strength and gratitude within my heart. This simple act of faith reinforces the belief that no matter how difficult the trials may be, there is always hope and resurrection waiting ahead. Ultimately, this sacred encounter serves as a comforting reminder that I am never alone in my journey, as His presence continuously guides every step I take.
+                </p>
             </div>
 
-            <div class="photo-section-title">Photo Documentation</div>
-            <div class="gallery-grid">
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 1"><div class="photo-label"><span>01</span> Photo 1</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 2"><div class="photo-label"><span>02</span> Photo 2</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 3"><div class="photo-label"><span>03</span> Photo 3</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 4"><div class="photo-label"><span>04</span> Photo 4</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 5"><div class="photo-label"><span>05</span> Photo 5</div></div>
-            </div>
-        </div>
-
-        <!-- 2. Love of Wisdom -->
-        <div class="card">
-            <span class="badge">02 / CORE VALUE</span>
-            <h3>Love of Wisdom</h3>
-            <div class="grid-2">
-                <div class="sub-box">
-                    <h4>Meaning</h4>
-                    <p>Love of Wisdom signifies the relentless pursuit of knowledge, critical thinking, and intellectual excellence. It urges UBians to look beyond the surface, question assumptions, and continuously seek truth.</p>
-                </div>
-                <div class="sub-box">
-                    <h4>Connection to IT</h4>
-                    <p>Information Technology evolves daily. A love of wisdom drives IT professionals to engage in continuous learning, mastering new frameworks, security protocols, system architectures, and logical reasoning.</p>
-                </div>
+            <!-- PICTURE 2 (WALA MUNA) -->
+            <div class="photo-card">
+                <img src="images/faith2.jpg" alt="Faith in God">
             </div>
 
-            <div class="photo-section-title">Photo Documentation</div>
-            <div class="gallery-grid">
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 1"><div class="photo-label"><span>01</span> Photo 1</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 2"><div class="photo-label"><span>02</span> Photo 2</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 3"><div class="photo-label"><span>03</span> Photo 3</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 4"><div class="photo-label"><span>04</span> Photo 4</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 5"><div class="photo-label"><span>05</span> Photo 5</div></div>
-            </div>
-        </div>
-
-        <!-- 3. Service to Fellowmen -->
-        <div class="card">
-            <span class="badge">03 / CORE VALUE</span>
-            <h3>Service to Fellowmen</h3>
-            <div class="grid-2">
-                <div class="sub-box">
-                    <h4>Meaning</h4>
-                    <p>Service to Fellowmen defines a UBian's purpose as being a helper, builder, and defender of others. It means using one's talents and skills to uplift communities and address societal needs.</p>
-                </div>
-                <div class="sub-box">
-                    <h4>Connection to IT</h4>
-                    <p>IT is a tool for social good. Whether building civic-tech platforms, creating assistive medical systems, or developing technology to simplify daily human life, IT serves to solve real-world problems.</p>
-                </div>
+            <!-- PICTURE 3 (WALA MUNA) -->
+            <div class="photo-card">
+                <img src="images/faith3.jpg" alt="Faith in God">
             </div>
 
-            <div class="photo-section-title">Photo Documentation</div>
-            <div class="gallery-grid">
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 1"><div class="photo-label"><span>01</span> Photo 1</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 2"><div class="photo-label"><span>02</span> Photo 2</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 3"><div class="photo-label"><span>03</span> Photo 3</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 4"><div class="photo-label"><span>04</span> Photo 4</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 5"><div class="photo-label"><span>05</span> Photo 5</div></div>
-            </div>
-        </div>
-
-        <!-- ================= BEST ATTRIBUTES ================= -->
-        <h2 class="section-title">UB Attributes (BEST)</h2>
-
-        <!-- Builder -->
-        <div class="card">
-            <span class="badge">01 / BEST ATTRIBUTE</span>
-            <h3>Builder and Innovator of Knowledge</h3>
-            <div class="grid-2">
-                <div class="sub-box">
-                    <h4>Meaning</h4>
-                    <p>This attribute encourages UBians to create new ideas, construct functional products, and pioneer innovative solutions instead of merely consuming existing knowledge.</p>
-                </div>
-                <div class="sub-box">
-                    <h4>Connection to IT</h4>
-                    <p>In IT, innovation is the default state. Students must transition from being coders into software engineers who design new algorithms, architect databases, and build original digital tools.</p>
-                </div>
+            <!-- PICTURE 4 (WALA MUNA) -->
+            <div class="photo-card">
+                <img src="images/faith4.jpg" alt="Faith in God">
             </div>
 
-            <div class="photo-section-title">Photo Documentation</div>
-            <div class="gallery-grid">
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 1"><div class="photo-label"><span>01</span> Photo 1</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 2"><div class="photo-label"><span>02</span> Photo 2</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 3"><div class="photo-label"><span>03</span> Photo 3</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 4"><div class="photo-label"><span>04</span> Photo 4</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 5"><div class="photo-label"><span>05</span> Photo 5</div></div>
-            </div>
-        </div>
-
-        <!-- Efficient -->
-        <div class="card">
-            <span class="badge">02 / BEST ATTRIBUTE</span>
-            <h3>Efficient Professional & Effective Communicator</h3>
-            <div class="grid-2">
-                <div class="sub-box">
-                    <h4>Meaning</h4>
-                    <p>UBians are trained to carry themselves with professional excellence and convey ideas clearly, persuasively, and with empathy across different mediums.</p>
-                </div>
-                <div class="sub-box">
-                    <h4>Connection to IT</h4>
-                    <p>An IT professional cannot work in a silo. We must translate complex technical jargon into clear business requirements for clients, write clean documentation, and collaborate in agile teams.</p>
-                </div>
+            <!-- PICTURE 5 (WALA MUNA) -->
+            <div class="photo-card">
+                <img src="images/faith5.jpg" alt="Faith in God">
             </div>
 
-            <div class="photo-section-title">Photo Documentation</div>
-            <div class="gallery-grid">
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 1"><div class="photo-label"><span>01</span> Photo 1</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 2"><div class="photo-label"><span>02</span> Photo 2</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 3"><div class="photo-label"><span>03</span> Photo 3</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 4"><div class="photo-label"><span>04</span> Photo 4</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 5"><div class="photo-label"><span>05</span> Photo 5</div></div>
-            </div>
-        </div>
-
-        <!-- Social -->
-        <div class="card">
-            <span class="badge">03 / BEST ATTRIBUTE</span>
-            <h3>Social, Moral, and Global-minded Citizen</h3>
-            <div class="grid-2">
-                <div class="sub-box">
-                    <h4>Meaning</h4>
-                    <p>Demands that UBians recognize their place in the global community while maintaining strict moral integrity and advocating for social justice locally.</p>
-                </div>
-                <div class="sub-box">
-                    <h4>Connection to IT</h4>
-                    <p>IT systems cross borders instantly. As global citizens, we consider the ethical implications of data mining, respect global privacy laws (such as GDPR), and design secure digital ecosystems.</p>
-                </div>
-            </div>
-
-            <div class="photo-section-title">Photo Documentation</div>
-            <div class="gallery-grid">
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 1"><div class="photo-label"><span>01</span> Photo 1</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 2"><div class="photo-label"><span>02</span> Photo 2</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 3"><div class="photo-label"><span>03</span> Photo 3</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 4"><div class="photo-label"><span>04</span> Photo 4</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 5"><div class="photo-label"><span>05</span> Photo 5</div></div>
-            </div>
-        </div>
-
-        <!-- Transformed -->
-        <div class="card">
-            <span class="badge">04 / BEST ATTRIBUTE</span>
-            <h3>Transformed Lifelong Learner</h3>
-            <div class="grid-2">
-                <div class="sub-box">
-                    <h4>Meaning</h4>
-                    <p>Emphasizes a perpetual process of self-improvement, adaptation, and transformation in response to an ever-changing world.</p>
-                </div>
-                <div class="sub-box">
-                    <h4>Connection to IT</h4>
-                    <p>A programming language or framework popular today may be replaced tomorrow. An IT graduate must possess the meta-skill of "learning how to learn" to view change as an opportunity to adapt.</p>
-                </div>
-            </div>
-
-            <div class="photo-section-title">Photo Documentation</div>
-            <div class="gallery-grid">
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 1"><div class="photo-label"><span>01</span> Photo 1</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 2"><div class="photo-label"><span>02</span> Photo 2</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 3"><div class="photo-label"><span>03</span> Photo 3</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 4"><div class="photo-label"><span>04</span> Photo 4</div></div>
-                <div class="photo-card"><img src="https://via.placeholder.com/600x350" alt="Photo 5"><div class="photo-label"><span>05</span> Photo 5</div></div>
-            </div>
         </div>
 
     </div>
 
-    <footer>
-        <div class="footer-content">
-            <div class="student-info">
-                <p><strong>Name:</strong> Lance Noah Salcedo</p>
-                <p><strong>Course & Section:</strong> BSIT - IT1B</p>
-                <p><strong>Project:</strong> Rizal Course IT Integration</p>
-                <p><strong>A.Y.:</strong> 2026-2027</p>
-            </div>
+
+    <!-- =========================
+         2. LOVE OF WISDOM
+    ========================== -->
+
+    <div class="section" id="wisdom">
+
+        <h2>2. Love of Wisdom (Intellect)</h2>
+
+        <p class="description">
+
+            Love of Wisdom represents the desire to learn,
+            understand new ideas, develop knowledge, and
+            continuously improve one's intellectual abilities.
+
+        </p>
+
+
+        <div class="pictures">
+
+            <img src="images/wisdom1.jpg" alt="Love of Wisdom">
+
+            <img src="images/wisdom2.jpg" alt="Love of Wisdom">
+
+            <img src="images/wisdom3.jpg" alt="Love of Wisdom">
+
+            <img src="images/wisdom4.jpg" alt="Love of Wisdom">
+
+            <img src="images/wisdom5.jpg" alt="Love of Wisdom">
+
         </div>
+
+    </div>
+
+
+    <!-- =========================
+         3. SERVICE TO FELLOWMEN
+    ========================== -->
+
+    <div class="section" id="service">
+
+        <h2>3. Service to Fellowmen (Purpose)</h2>
+
+        <p class="description">
+
+            Service to Fellowmen encourages students to help
+            others, contribute to their community, and use
+            their abilities to make a positive difference.
+
+        </p>
+
+
+        <div class="pictures">
+
+            <img src="images/service1.jpg" alt="Service to Fellowmen">
+
+            <img src="images/service2.jpg" alt="Service to Fellowmen">
+
+            <img src="images/service3.jpg" alt="Service to Fellowmen">
+
+            <img src="images/service4.jpg" alt="Service to Fellowmen">
+
+            <img src="images/service5.jpg" alt="Service to Fellowmen">
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         BEST ATTRIBUTES INTRO
+    ========================== -->
+
+    <div class="intro">
+
+        <h2>UB Attributes - BEST</h2>
+
+        <p>
+
+            The University of Batangas aims to develop students
+            who demonstrate knowledge, professionalism,
+            responsibility, communication skills, and continuous
+            personal growth.
+
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         4. BUILDER
+    ========================== -->
+
+    <div class="section" id="builder">
+
+        <h2>4. Builder and Innovator of Knowledge</h2>
+
+        <p class="description">
+
+            This attribute represents creativity, innovation,
+            research, and the ability to develop new ideas
+            and knowledge.
+
+        </p>
+
+
+        <div class="pictures">
+
+            <img src="images/builder1.jpg" alt="Builder and Innovator">
+
+            <img src="images/builder2.jpg" alt="Builder and Innovator">
+
+            <img src="images/builder3.jpg" alt="Builder and Innovator">
+
+            <img src="images/builder4.jpg" alt="Builder and Innovator">
+
+            <img src="images/builder5.jpg" alt="Builder and Innovator">
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         5. COMMUNICATOR
+    ========================== -->
+
+    <div class="section" id="communication">
+
+        <h2>
+            5. Efficient Professional and Effective Communicator
+        </h2>
+
+        <p class="description">
+
+            This attribute focuses on professionalism,
+            responsibility, confidence, and the ability to
+            communicate ideas clearly and effectively.
+
+        </p>
+
+
+        <div class="pictures">
+
+            <img src="images/communication1.jpg" alt="Effective Communicator">
+
+            <img src="images/communication2.jpg" alt="Effective Communicator">
+
+            <img src="images/communication3.jpg" alt="Effective Communicator">
+
+            <img src="images/communication4.jpg" alt="Effective Communicator">
+
+            <img src="images/communication5.jpg" alt="Effective Communicator">
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         6. GLOBAL-MINDED CITIZEN
+    ========================== -->
+
+    <div class="section" id="global">
+
+        <h2>
+            6. Social, Moral and Global-Minded Citizen
+        </h2>
+
+        <p class="description">
+
+            This attribute encourages students to become
+            responsible members of society who respect others,
+            understand global issues, and contribute positively
+            to their community.
+
+        </p>
+
+
+        <div class="pictures">
+
+            <img src="images/global1.jpg" alt="Global-Minded Citizen">
+
+            <img src="images/global2.jpg" alt="Global-Minded Citizen">
+
+            <img src="images/global3.jpg" alt="Global-Minded Citizen">
+
+            <img src="images/global4.jpg" alt="Global-Minded Citizen">
+
+            <img src="images/global5.jpg" alt="Global-Minded Citizen">
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         7. LIFELONG LEARNER
+    ========================== -->
+
+    <div class="section" id="learner">
+
+        <h2>
+            7. Transformed Lifelong Learner
+        </h2>
+
+        <p class="description">
+
+            This attribute represents continuous learning,
+            personal growth, adaptability, and the willingness
+            to develop new knowledge and skills throughout life.
+
+        </p>
+
+
+        <div class="pictures">
+
+            <img src="images/learner1.jpg" alt="Lifelong Learner">
+
+            <img src="images/learner2.jpg" alt="Lifelong Learner">
+
+            <img src="images/learner3.jpg" alt="Lifelong Learner">
+
+            <img src="images/learner4.jpg" alt="Lifelong Learner">
+
+            <img src="images/learner5.jpg" alt="Lifelong Learner">
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            University of Batangas - Lipa City Campus
+        </p>
+
+        <p>
+            Core Values and Attributes
+        </p>
+
     </footer>
 
+
 </body>
+</html>
