@@ -3,593 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>University of Batangas Core Values and Attributes</title>
-
     <style>
-
-        * {
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f5f5f5;
-            color: #555555;
-        }
-
-        header {
-            background: linear-gradient(135deg, #8b0000, #a51d2d, #780000);
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 48px;
-            color: white;
-        }
-
-        header h2 {
-            margin: 12px 0;
-            font-size: 28px;
-            color: white;
-            font-weight: normal;
-        }
-
-        header p {
-            font-size: 20px;
-            margin: 5px;
-            color: white;
-        }
-
-        nav {
-            background-color: #65151f;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 8px 15px;
-            display: inline-block;
-        }
-
-        nav a:hover {
-            color: #e7c7ce;
-        }
-
-        main {
-            width: 90%;
-            max-width: 1100px;
-            margin: 40px auto;
-        }
-
-        .intro {
-            background-color: white;
-            padding: 35px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-            margin-bottom: 35px;
-        }
-
-        .intro h2 {
-            color: #7a4b5a;
-            font-size: 34px;
-        }
-
-        .intro p {
-            font-size: 18px;
-            line-height: 1.8;
-        }
-
-        .section {
-            background-color: white;
-            padding: 30px;
-            margin-bottom: 35px;
-            border-radius: 10px;
-            border-top: 6px solid #7a4b5a;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-        }
-
-        .section h2 {
-            color: #7a4b5a;
-            font-size: 30px;
-            margin-top: 0;
-        }
-
-        .section h3 {
-            color: #7a4b5a;
-            font-size: 21px;
-        }
-
-        .section p {
-            font-size: 17px;
-            line-height: 1.8;
-            text-align: justify;
-        }
-
-        .pictures {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 12px;
-            margin: 25px 0;
-        }
-
-        .pictures img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 8px;
-            border: 3px solid #d8c2c8;
-        }
-
-        .connection {
-            background-color: #faf3f5;
-            border-left: 5px solid #7a4b5a;
-            padding: 20px;
-            border-radius: 5px;
-        }
-
-        .connection h3 {
-            margin-top: 0;
-        }
-
-        .student {
-            background-color: white;
-            text-align: center;
-            padding: 35px;
-            border-radius: 10px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-            margin-top: 45px;
-        }
-
-        .student h2 {
-            color: #7a4b5a;
-        }
-
-        .student .name {
-            font-size: 26px;
-            font-weight: bold;
-            color: #7a4b5a;
-        }
-
-        .student p {
-            font-size: 18px;
-            margin: 7px;
-        }
-
-        footer {
-            background-color: #65151f;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 40px;
-        }
-
-        footer p {
-            margin: 5px;
-        }
-
-        @media (max-width: 850px) {
-
-            .pictures {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            header h1 {
-                font-size: 36px;
-            }
-        }
-
-        @media (max-width: 500px) {
-
-            .pictures {
-                grid-template-columns: 1fr;
-            }
-
-            .pictures img {
-                height: 220px;
-            }
-
-            nav a {
-                display: block;
-                margin: 10px;
-            }
-        }
-
+        * { box-sizing: border-box; scroll-behavior: smooth; }
+        body { margin: 0; font-family: Arial, Helvetica, sans-serif; background-color: #f5f5f5; color: #555555; }
+        header { background: linear-gradient(135deg, #8b0000, #a51d2d, #780000); color: white; text-align: center; padding: 60px 20px; }
+        header h1 { margin: 0; font-size: 48px; color: white; }
+        header h2 { margin: 12px 0; font-size: 28px; color: white; font-weight: normal; }
+        header p { font-size: 20px; margin: 5px; color: white; }
+        nav { background-color: #65151f; padding: 15px; text-align: center; }
+        nav a { color: white; text-decoration: none; font-weight: bold; margin: 8px 15px; display: inline-block; }
+        nav a:hover { color: #e7c7ce; }
+        main { width: 90%; max-width: 1100px; margin: 40px auto; }
+        .intro, .section, .student { background-color: white; padding: 35px; text-align: center; border-radius: 10px; box-shadow: 0 3px 12px rgba(0,0,0,0.08); margin-bottom: 35px; }
+        .section { border-top: 6px solid #7a4b5a; padding: 30px; text-align: left; }
+        .section h2 { color: #7a4b5a; font-size: 30px; margin-top: 0; }
+        .section h3 { color: #7a4b5a; font-size: 21px; }
+        .intro h2, .student h2 { color: #7a4b5a; font-size: 34px; }
+        .intro p, .section p, .student p { font-size: 18px; line-height: 1.8; }
+        .section p { text-align: justify; font-size: 17px; }
+        .pictures { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin: 25px 0; }
+        .pictures img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; border: 3px solid #d8c2c8; }
+        .connection { background-color: #faf3f5; border-left: 5px solid #7a4b5a; padding: 20px; border-radius: 5px; }
+        .connection h3 { margin-top: 0; }
+        .student .name { font-size: 26px; font-weight: bold; color: #7a4b5a; }
+        footer { background-color: #65151f; color: white; text-align: center; padding: 25px; margin-top: 40px; }
+        footer p { margin: 5px; }
+        @media (max-width: 850px) { .pictures { grid-template-columns: repeat(2, 1fr); } header h1 { font-size: 36px; } }
+        @media (max-width: 500px) { .pictures { grid-template-columns: 1fr; } .pictures img { height: 220px; } nav a { display: block; margin: 10px; } }
     </style>
 </head>
-
 <body>
 
 <header>
-
     <h1>University of Batangas</h1>
-
     <h2>Lipa City Campus</h2>
-
     <p>Core Values and Attributes</p>
-
 </header>
 
-
 <nav>
-
     <a href="#faith">Faith in God</a>
-
     <a href="#wisdom">Love of Wisdom</a>
-
     <a href="#service">Service to Fellowmen</a>
-
     <a href="#builder">Builder</a>
-
     <a href="#communicator">Communicator</a>
-
     <a href="#global">Global Citizen</a>
-
     <a href="#learner">Lifelong Learner</a>
-
 </nav>
 
-
 <main>
-
-
     <div class="intro">
-
         <h2>My Connection to Information Technology</h2>
-
-        <p>
-            The values and attributes of the University of Batangas
-            can also be connected to Information Technology. These
-            values can guide me as a student while I learn about
-            computers, programming, and other technologies. They can
-            also help me become a responsible and hardworking IT
-            professional in the future.
-        </p>
-
+        <p>The values and attributes of the University of Batangas can also be connected to Information Technology. These values can guide me as a student while I learn about computers, programming, and other technologies. They can also help me become a responsible and hardworking IT professional in the future.</p>
     </div>
 
-
     <!-- 1 FAITH IN GOD -->
-
     <section class="section" id="faith">
-
         <h2>1. Faith in God</h2>
-
         <div class="pictures">
-
             <img src="images/faith1.jpg" alt="Faith in God picture 1">
-
             <img src="images/faith2.jpg" alt="Faith in God picture 2">
-
             <img src="images/faith3.jpg" alt="Faith in God picture 3">
-
             <img src="images/faith4.jpg" alt="Faith in God picture 4">
-
             <img src="images/faith5.jpg" alt="Faith in God picture 5">
-
         </div>
-
         <div class="connection">
-
             <h3>Connection to Information Technology</h3>
-
-            <p>
-                Faith in God is important to me because it reminds me
-                to use technology in a good and responsible way. As an
-                IT student, I can use my skills to create things that
-                can help other people. It also teaches me to be honest
-                when doing projects and using information online. I
-                should not use technology to harm or deceive others.
-                I believe that my knowledge in IT can be used for
-                something meaningful and helpful. This value reminds
-                me to always do what is right while learning and using
-                technology.
-            </p>
-
+            <p>Faith in God is important to me because it reminds me to use technology in a good and responsible way...</p>
         </div>
-
     </section>
-
 
     <!-- 2 LOVE OF WISDOM -->
-
     <section class="section" id="wisdom">
-
         <h2>2. Love of Wisdom</h2>
-
         <div class="pictures">
-
-            <img src="images/wisdom1.jpg" alt="Love of Wisdom picture 1">
-
+            <img src="images/loveofwisdom1.jpg" alt="Love of Wisdom picture 1">
             <img src="images/wisdom2.jpg" alt="Love of Wisdom picture 2">
-
             <img src="images/wisdom3.jpg" alt="Love of Wisdom picture 3">
-
             <img src="images/wisdom4.jpg" alt="Love of Wisdom picture 4">
-
             <img src="images/wisdom5.jpg" alt="Love of Wisdom picture 5">
-
         </div>
-
         <div class="connection">
-
             <h3>Connection to Information Technology</h3>
-
-            <p>
-                Love of Wisdom is connected to IT because technology
-                requires continuous learning. As an IT student, I need
-                to learn new skills and understand how different
-                technologies work. Programming also requires patience
-                because mistakes are normal while creating a program.
-                Learning from those mistakes can help me become better
-                at solving problems. I also need to be curious and ask
-                questions when I do not understand something. This
-                value encourages me to keep learning and improving my
-                knowledge in Information Technology.
-            </p>
-
+            <p>Love of Wisdom is connected to IT because technology requires continuous learning...</p>
         </div>
-
     </section>
-
 
     <!-- 3 SERVICE TO FELLOWMEN -->
-
     <section class="section" id="service">
-
         <h2>3. Service to Fellowmen</h2>
-
         <div class="pictures">
-
             <img src="images/service1.jpg" alt="Service picture 1">
-
             <img src="images/service2.jpg" alt="Service picture 2">
-
             <img src="images/service3.jpg" alt="Service picture 3">
-
             <img src="images/service4.jpg" alt="Service picture 4">
-
             <img src="images/service5.jpg" alt="Service picture 5">
-
         </div>
-
         <div class="connection">
-
             <h3>Connection to Information Technology</h3>
-
-            <p>
-                Service to Fellowmen can be connected to IT because
-                technology can be used to help other people. As an IT
-                student, I can create websites or programs that can
-                make tasks easier for users. I can also use my skills
-                to help classmates who are having problems with
-                technology. Technology is more meaningful when it is
-                used to solve problems and help communities. I should
-                remember that my skills are not only for my own benefit.
-                I can use what I learn in IT to serve and help others.
-            </p>
-
+            <p>Service to Fellowmen can be connected to IT because technology can be used to help other people...</p>
         </div>
-
     </section>
-
 
     <!-- 4 BUILDER -->
-
     <section class="section" id="builder">
-
         <h2>4. Builder and Innovator of Knowledge</h2>
-
         <div class="pictures">
-
-            <img src="images/builder1.jpg" alt="Builder picture 1">
-
+            <img src="images/2a827fb7-4653-4f49-ae44-f40f1a6a358e.jpg" alt="Ceiling Builder picture 1">
             <img src="images/builder2.jpg" alt="Builder picture 2">
-
             <img src="images/builder3.jpg" alt="Builder picture 3">
-
             <img src="images/builder4.jpg" alt="Builder picture 4">
-
             <img src="images/builder5.jpg" alt="Builder picture 5">
-
         </div>
-
         <div class="connection">
-
             <h3>Connection to Information Technology</h3>
-
-            <p>
-                Being a Builder and Innovator of Knowledge is connected
-                to IT because IT students create different digital
-                projects. We can build websites, programs, applications,
-                and other systems using what we learn. Creating these
-                projects also allows us to use our own ideas and
-                creativity. Sometimes our first idea does not work, so
-                we need to improve it and try again. This teaches us
-                to be patient and not give up easily. As a BSIT student,
-                I want to use my knowledge to create useful technology.
-            </p>
-
+            <p>Being a Builder and Innovator of Knowledge is connected to IT because IT students create different digital projects...</p>
         </div>
-
     </section>
-
 
     <!-- 5 COMMUNICATOR -->
-
     <section class="section" id="communicator">
-
         <h2>5. Efficient Professional and Effective Communicator</h2>
-
         <div class="pictures">
-
             <img src="images/communicator1.jpg" alt="Communicator picture 1">
-
             <img src="images/communicator2.jpg" alt="Communicator picture 2">
-
             <img src="images/communicator3.jpg" alt="Communicator picture 3">
-
             <img src="images/communicator4.jpg" alt="Communicator picture 4">
-
             <img src="images/communicator5.jpg" alt="Communicator picture 5">
-
         </div>
-
         <div class="connection">
-
             <h3>Connection to Information Technology</h3>
-
-            <p>
-                Communication is very important in Information
-                Technology because IT students often work with other
-                people. When creating a project, everyone needs to
-                understand their responsibilities and tasks. Good
-                communication can help avoid mistakes and confusion
-                during group projects. IT professionals also need to
-                explain technical ideas in a way that users can
-                understand. Being professional means doing tasks
-                properly and respecting the people we work with.
-                These skills can help me become a better IT professional
-                in the future.
-            </p>
-
+            <p>Communication is very important in Information Technology because IT students often work with other people...</p>
         </div>
-
     </section>
-
 
     <!-- 6 GLOBAL CITIZEN -->
-
     <section class="section" id="global">
-
         <h2>6. Social, Moral and Global-Minded Citizen</h2>
-
         <div class="pictures">
-
             <img src="images/global1.jpg" alt="Global Citizen picture 1">
-
             <img src="images/global2.jpg" alt="Global Citizen picture 2">
-
             <img src="images/global3.jpg" alt="Global Citizen picture 3">
-
             <img src="images/global4.jpg" alt="Global Citizen picture 4">
-
             <img src="images/global5.jpg" alt="Global Citizen picture 5">
-
         </div>
-
         <div class="connection">
-
             <h3>Connection to Information Technology</h3>
-
-            <p>
-                Being a Social, Moral and Global-Minded Citizen is
-                important in IT because technology connects people
-                from different places. As an IT student, I should
-                respect other people when using social media and
-                other online platforms. I should also be careful with
-                personal information and avoid sharing things that
-                can hurt others. Technology can have a big effect on
-                society, so it should be used responsibly. I also need
-                to respect different cultures and opinions when
-                communicating online. This value can help me become
-                a responsible user and future IT professional.
-            </p>
-
+            <p>Being a Social, Moral and Global-Minded Citizen is important in IT because technology connects people from different places...</p>
         </div>
-
     </section>
-
 
     <!-- 7 LIFELONG LEARNER -->
-
     <section class="section" id="learner">
-
         <h2>7. Transformed Lifelong Learner</h2>
-
         <div class="pictures">
-
             <img src="images/learner1.jpg" alt="Lifelong Learner picture 1">
-
             <img src="images/learner2.jpg" alt="Lifelong Learner picture 2">
-
             <img src="images/learner3.jpg" alt="Lifelong Learner picture 3">
-
             <img src="images/learner4.jpg" alt="Lifelong Learner picture 4">
-
             <img src="images/learner5.jpg" alt="Lifelong Learner picture 5">
-
         </div>
-
         <div class="connection">
-
             <h3>Connection to Information Technology</h3>
-
-            <p>
-                Being a Lifelong Learner is important in IT because
-                technology keeps changing. New applications, programs,
-                devices, and systems are always being developed. As a
-                BSIT student, I need to continue learning even after
-                finishing my current subjects. I can learn through
-                practice, research, projects, and experience. Learning
-                new things can help me improve my skills and understand
-                technology better. I believe that continuing to learn
-                will help me become more prepared for my future career
-                in Information Technology.
-            </p>
-
+            <p>Being a Lifelong Learner is important in IT because technology keeps changing...</p>
         </div>
-
     </section>
-
 
     <!-- STUDENT INFORMATION -->
-
     <section class="student">
-
         <h2>Student Information</h2>
-
-        <p class="name">
-            Lance Noah Salcedo
-        </p>
-
-        <p>
-            <strong>Course:</strong> BSIT
-        </p>
-
-        <p>
-            <strong>Section:</strong> 1B
-        </p>
-
-        <p>
-            <strong>AY:</strong> 26-27
-        </p>
-
+        <p class="name">Lance Noah Salcedo</p>
+        <p><strong>Course:</strong> BSIT</p>
+        <p><strong>Section:</strong> 1B</p>
+        <p><strong>AY:</strong> 26-27</p>
     </section>
-
-
 </main>
 
-
 <footer>
-
     <p>University of Batangas Lipa City Campus</p>
-
     <p>BS Information Technology</p>
-
     <p>Lance Noah Salcedo | 1B | AY 26-27</p>
-
 </footer>
-
 
 </body>
 </html>
