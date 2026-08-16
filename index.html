@@ -7,7 +7,6 @@
     <title>University of Batangas - Core Values and Attributes</title>
 
     <style>
-
         * {
             box-sizing: border-box;
             scroll-behavior: smooth;
@@ -17,620 +16,376 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f5f5f5;
-            color: #222;
+            color: #555555;
         }
 
-        /* =========================
-           HEADER
-        ========================== */
-
+        /* HEADER */
         header {
-            background-color: #800000;
-            color: white;
+            background: linear-gradient(135deg, #8b0000, #a51d2d, #780000);
+            color: #ffffff;
             text-align: center;
-            padding: 60px 20px;
+            padding: 70px 20px 55px;
         }
 
         header h1 {
             margin: 0;
-            font-size: 45px;
-            letter-spacing: 1px;
+            font-size: 52px;
+            font-weight: 700;
+            color: #ffffff;
         }
 
         header h2 {
-            margin: 10px 0;
-            font-size: 25px;
-            font-weight: normal;
+            margin: 18px 0 10px;
+            font-size: 30px;
+            font-weight: 400;
+            color: #ffffff;
         }
 
         header p {
-            margin: 5px 0;
-            font-size: 18px;
+            margin: 0;
+            font-size: 23px;
+            font-weight: 500;
+            color: #ffffff;
         }
 
-
-        /* =========================
-           NAVIGATION
-        ========================== */
-
+        /* NAVIGATION */
         nav {
-            background-color: #5c0000;
-            padding: 15px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            background-color: #65151f;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 18px 10px;
         }
 
         nav a {
-            color: white;
+            color: #ffffff;
             text-decoration: none;
-            margin: 0 12px;
-            font-size: 15px;
             font-weight: bold;
+            font-size: 17px;
+            margin: 8px 22px;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #e8c9cf;
         }
 
-
-        /* =========================
-           INTRODUCTION
-        ========================== */
+        /* MAIN */
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 55px 25px;
+        }
 
         .intro {
-            max-width: 950px;
-            margin: 35px auto;
-            padding: 35px;
-            background-color: white;
-            border-radius: 15px;
             text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+            background-color: #ffffff;
+            padding: 35px;
+            margin-bottom: 35px;
+            border-radius: 8px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
         }
 
         .intro h2 {
-            color: #800000;
-            font-size: 30px;
+            color: #7a4b5a;
+            font-size: 38px;
             margin-top: 0;
         }
 
         .intro p {
-            font-size: 17px;
-            line-height: 1.7;
-            color: #555;
+            color: #555555;
+            font-size: 18px;
+            line-height: 1.8;
         }
 
-
-        /* =========================
-           SECTIONS & IT BOX
-        ========================== */
-
-        .section {
-            max-width: 1100px;
-            margin: 30px auto;
-            padding: 30px;
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.10);
-        }
-
-        .section h2 {
-            color: #800000;
-            font-size: 25px;
-            margin-top: 0;
-            border-left: 6px solid #800000;
-            padding-left: 12px;
-        }
-
-        .description {
-            color: #555;
-            font-size: 16px;
-            line-height: 1.7;
-        }
-
-        .it-connection {
-            background-color: #fdf2f2;
-            border-left: 4px solid #800000;
-            padding: 12px 18px;
-            margin-top: 15px;
-            border-radius: 6px;
-            font-size: 15px;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .it-connection strong {
-            color: #800000;
-            display: inline-block;
-            margin-bottom: 3px;
-        }
-
-
-        /* =========================
-           PICTURES
-        ========================== */
-
-        .pictures {
+        /* CARDS */
+        .cards {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 15px;
-            margin-top: 25px;
-            align-items: start;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
         }
 
-        .photo-card {
-            background-color: #fafafa;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .pictures img {
-            width: 100%;
-            height: 170px;
-            object-fit: cover;
+        .card {
+            background-color: #ffffff;
+            padding: 30px;
             border-radius: 8px;
-            background-color: #ddd;
-            transition: 0.3s;
+            border-top: 6px solid #7a4b5a;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
         }
 
-        .pictures img:hover {
-            transform: scale(1.04);
+        .card h2 {
+            color: #7a4b5a;
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 18px;
         }
 
-        .reflection-text {
-            font-size: 12px;
-            color: #333;
-            margin-top: 10px;
-            line-height: 1.5;
+        .card h3 {
+            color: #7a4b5a;
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #555555;
+            font-size: 17px;
+            line-height: 1.8;
             text-align: justify;
         }
 
-
-        /* =========================
-           FOOTER
-        ========================== */
-
-        footer {
-            margin-top: 50px;
-            background-color: #800000;
-            color: white;
+        /* PROFILE */
+        .profile {
+            margin-top: 45px;
+            background-color: #ffffff;
             text-align: center;
-            padding: 30px;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .profile h2 {
+            color: #7a4b5a;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .profile p {
+            color: #555555;
+            font-size: 19px;
+            line-height: 1.8;
+            margin: 5px;
+        }
+
+        .profile .name {
+            color: #7a4b5a;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #65151f;
+            color: #ffffff;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
         }
 
         footer p {
             margin: 5px;
+            color: #ffffff;
         }
 
-
-        /* =========================
-           MOBILE DESIGN
-        ========================== */
-
-        @media (max-width: 800px) {
+        /* MOBILE */
+        @media (max-width: 750px) {
 
             header h1 {
-                font-size: 32px;
+                font-size: 36px;
             }
 
             header h2 {
-                font-size: 20px;
+                font-size: 24px;
             }
 
-            nav {
-                padding: 12px 5px;
+            header p {
+                font-size: 19px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
             }
 
             nav a {
-                display: inline-block;
-                margin: 5px;
-                font-size: 13px;
-            }
-
-            .section {
-                margin: 20px 12px;
-                padding: 20px;
-            }
-
-            .intro {
-                margin: 20px 12px;
-                padding: 25px;
-            }
-
-            .pictures {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .pictures img {
-                height: 140px;
+                font-size: 15px;
+                margin: 6px 10px;
             }
         }
-
     </style>
 </head>
 
-
 <body>
 
-
-    <!-- =========================
-         HEADER
-    ========================== -->
-
+    <!-- HEADER -->
     <header>
-
         <h1>University of Batangas</h1>
-
         <h2>Lipa City Campus</h2>
-
         <p>Core Values and Attributes</p>
-
     </header>
 
-
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
-
+    <!-- NAVIGATION -->
     <nav>
-
-        <a href="#faith">Faith</a>
-
         <a href="#wisdom">Wisdom</a>
-
         <a href="#service">Service</a>
-
         <a href="#builder">Builder</a>
-
-        <a href="#communication">Communicator</a>
-
+        <a href="#communicator">Communicator</a>
         <a href="#global">Global Citizen</a>
-
-        <a href="#learner">Lifelong Learner</a>
-
+        <a href="#lifelong">Lifelong Learner</a>
     </nav>
 
+    <main>
 
-    <!-- =========================
-         CORE VALUES INTRO
-    ========================== -->
+        <!-- INTRODUCTION -->
+        <section class="intro">
+            <h2>UB Core Values</h2>
 
-    <div class="intro">
-
-        <h2>UB Core Values</h2>
-
-        <p>
-            The University of Batangas promotes values that guide
-            students in their academic, personal, and social development.
-            These values help students become responsible and meaningful
-            members of society.
-        </p>
-
-    </div>
-
-
-    <!-- =========================
-         1. FAITH IN GOD
-    ========================== -->
-
-    <div class="section" id="faith">
-
-        <h2>1. Faith in God (Spirit)</h2>
-
-        <p class="description">
-            Faith in God represents spirituality, trust, and
-            devotion. It encourages students to strengthen their
-            relationship with God and live according to good values.
-        </p>
-
-        <div class="it-connection">
-            <strong>Connection to Information Technology:</strong>
-            In the field of IT, Faith in God serves as a moral compass for technology creators. It translates into ethical computing—ensuring that the algorithms, AI systems, and software we build prioritize human dignity, honesty, user privacy, and responsible stewardship of digital tools.
-        </div>
+            <p>
+                The University of Batangas promotes core values and attributes
+                that help students develop not only academically but also
+                personally and professionally. These values guide students
+                in becoming responsible, capable, and meaningful members
+                of society. As a BS Information Technology student, these
+                values can also be connected to the skills and responsibilities
+                needed in the field of Information Technology.
+            </p>
+        </section>
 
 
-        <div class="pictures">
+        <!-- CORE VALUES AND ATTRIBUTES -->
+        <section class="cards">
 
-            <!-- PICTURE 1 (WITH REFLECTION) -->
-            <div class="photo-card">
-                <img src="images/faith1.jpg" alt="Faith in God - Praying in Church">
-                <p class="reflection-text">
-                    Standing before the Santo Entierro and gently touching the sacred cloth enclosed in the glass casing creates a deeply personal moment of quiet connection. Away from the noise and pressure of daily life, this physical gesture represents a total surrender of my worries, fears, and exhaustion to God. As I gaze inside, I am reminded of the immense sacrifice He made for us, which instills a renewed sense of strength and gratitude within my heart. This simple act of faith reinforces the belief that no matter how difficult the trials may be, there is always hope and resurrection waiting ahead. Ultimately, this sacred encounter serves as a comforting reminder that I am never alone in my journey, as His presence continuously guides every step I take.
+            <!-- WISDOM -->
+            <div class="card" id="wisdom">
+                <h2>Wisdom</h2>
+
+                <h3>Connection to Information Technology</h3>
+
+                <p>
+                    Wisdom is important in Information Technology because IT students
+                    need to think carefully before making decisions. In programming,
+                    a small mistake can affect the entire system, so understanding
+                    the problem first is very important. Wisdom also helps an IT
+                    student choose the right technology and solution for a specific
+                    situation. It encourages students to use information responsibly
+                    instead of simply following what others are doing. As a future
+                    IT professional, wisdom can help me create solutions that are
+                    useful, safe, and beneficial to other people.
                 </p>
             </div>
 
-            <!-- PICTURE 2 -->
-            <div class="photo-card">
-                <img src="images/faith2.jpg" alt="Faith in God">
+
+            <!-- SERVICE -->
+            <div class="card" id="service">
+                <h2>Service</h2>
+
+                <h3>Connection to Information Technology</h3>
+
+                <p>
+                    Service can be connected to Information Technology because
+                    technology is created to help people solve problems and make
+                    tasks easier. IT students can use their skills to create
+                    websites, applications, and systems that can benefit others.
+                    Helping classmates understand technology is also a simple
+                    example of service. An IT professional should not only focus
+                    on technical skills but also consider the needs of the users.
+                    Through service, I can use my knowledge in Information
+                    Technology to help people and contribute to the community.
+                </p>
             </div>
 
-            <!-- PICTURE 3 -->
-            <div class="photo-card">
-                <img src="images/faith3.jpg" alt="Faith in God">
+
+            <!-- BUILDER -->
+            <div class="card" id="builder">
+                <h2>Builder</h2>
+
+                <h3>Connection to Information Technology</h3>
+
+                <p>
+                    Being a Builder is strongly connected to Information Technology
+                    because IT professionals create systems, websites, programs,
+                    and other digital solutions. Building something in IT requires
+                    creativity, patience, and continuous improvement. An IT student
+                    must be willing to learn from mistakes while developing a project.
+                    Every line of code can contribute to creating a useful and
+                    functional product. As a future IT professional, I can become
+                    a Builder by creating technology that can solve real problems.
+                </p>
             </div>
 
-            <!-- PICTURE 4 -->
-            <div class="photo-card">
-                <img src="images/faith4.jpg" alt="Faith in God">
+
+            <!-- COMMUNICATOR -->
+            <div class="card" id="communicator">
+                <h2>Communicator</h2>
+
+                <h3>Connection to Information Technology</h3>
+
+                <p>
+                    Communication is important in Information Technology because
+                    IT professionals often work with different people and teams.
+                    An IT student needs to explain technical ideas in a simple
+                    and understandable way. Good communication also helps developers
+                    understand what users actually need from a system. When working
+                    on group projects, clear communication can prevent mistakes
+                    and misunderstandings. By becoming a good Communicator, I can
+                    work better with users, classmates, and future IT professionals.
+                </p>
             </div>
 
-            <!-- PICTURE 5 -->
-            <div class="photo-card">
-                <img src="images/faith5.jpg" alt="Faith in God">
+
+            <!-- GLOBAL CITIZEN -->
+            <div class="card" id="global">
+                <h2>Global Citizen</h2>
+
+                <h3>Connection to Information Technology</h3>
+
+                <p>
+                    Being a Global Citizen is connected to Information Technology
+                    because technology connects people from different countries
+                    and cultures. The internet allows information and ideas to
+                    be shared around the world in only a short amount of time.
+                    An IT student should understand that technology can affect
+                    people beyond their local community. It is also important to
+                    respect different cultures and use digital platforms responsibly.
+                    As a future IT professional, I can use technology to connect
+                    with others and contribute to solutions that can help people
+                    around the world.
+                </p>
             </div>
 
-        </div>
 
-    </div>
+            <!-- LIFELONG LEARNER -->
+            <div class="card" id="lifelong">
+                <h2>Lifelong Learner</h2>
 
+                <h3>Connection to Information Technology</h3>
 
-    <!-- =========================
-         2. LOVE OF WISDOM
-    ========================== -->
+                <p>
+                    Lifelong learning is very important in Information Technology
+                    because technology continues to change over time. New programming
+                    languages, tools, applications, and technologies are constantly
+                    being developed. Because of this, an IT student cannot stop
+                    learning after graduating from college. Continuous learning
+                    helps IT professionals improve their skills and stay updated
+                    with new developments. As a future BSIT graduate, I want to
+                    continue learning so I can adapt to changes and become a
+                    better IT professional.
+                </p>
+            </div>
 
-    <div class="section" id="wisdom">
+        </section>
 
-        <h2>2. Love of Wisdom (Intellect)</h2>
 
-        <p class="description">
-            Love of Wisdom represents the desire to learn,
-            understand new ideas, develop knowledge, and
-            continuously improve one's intellectual abilities.
-        </p>
+        <!-- STUDENT INFORMATION -->
+        <section class="profile">
 
-        <div class="it-connection">
-            <strong>Connection to Information Technology:</strong>
-            IT is driven by complex problem-solving, logic, and analytical thinking. Love of Wisdom inspires IT professionals to deeply understand system architectures, master algorithms, debug intricate software issues, and seek intellectual truth rather than taking technological shortcuts.
-        </div>
+            <h2>Student Information</h2>
 
+            <p class="name">Lance Noah Salcedo</p>
 
-        <div class="pictures">
+            <p><strong>Course:</strong> BS Information Technology</p>
 
-            <img src="images/wisdom1.jpg" alt="Love of Wisdom">
+            <p><strong>Section:</strong> 1B</p>
 
-            <img src="images/wisdom2.jpg" alt="Love of Wisdom">
+            <p><strong>Academic Year:</strong> 2026–2027</p>
 
-            <img src="images/wisdom3.jpg" alt="Love of Wisdom">
+        </section>
 
-            <img src="images/wisdom4.jpg" alt="Love of Wisdom">
+    </main>
 
-            <img src="images/wisdom5.jpg" alt="Love of Wisdom">
 
-        </div>
-
-    </div>
-
-
-    <!-- =========================
-         3. SERVICE TO FELLOWMEN
-    ========================== -->
-
-    <div class="section" id="service">
-
-        <h2>3. Service to Fellowmen (Purpose)</h2>
-
-        <p class="description">
-            Service to Fellowmen encourages students to help
-            others, contribute to their community, and use
-            their abilities to make a positive difference.
-        </p>
-
-        <div class="it-connection">
-            <strong>Connection to Information Technology:</strong>
-            Technology finds its ultimate purpose when it serves people. IT professionals apply this value by designing accessible user interfaces, building tech solutions for local communities, creating healthcare or educational applications, and using tech to streamline public services.
-        </div>
-
-
-        <div class="pictures">
-
-            <img src="images/service1.jpg" alt="Service to Fellowmen">
-
-            <img src="images/service2.jpg" alt="Service to Fellowmen">
-
-            <img src="images/service3.jpg" alt="Service to Fellowmen">
-
-            <img src="images/service4.jpg" alt="Service to Fellowmen">
-
-            <img src="images/service5.jpg" alt="Service to Fellowmen">
-
-        </div>
-
-    </div>
-
-
-    <!-- =========================
-         BEST ATTRIBUTES INTRO
-    ========================== -->
-
-    <div class="intro">
-
-        <h2>UB Attributes - BEST</h2>
-
-        <p>
-            The University of Batangas aims to develop students
-            who demonstrate knowledge, professionalism,
-            responsibility, communication skills, and continuous
-            personal growth.
-        </p>
-
-    </div>
-
-
-    <!-- =========================
-         4. BUILDER
-    ========================== -->
-
-    <div class="section" id="builder">
-
-        <h2>4. Builder and Innovator of Knowledge</h2>
-
-        <p class="description">
-            This attribute represents creativity, innovation,
-            research, and the ability to develop new ideas
-            and knowledge.
-        </p>
-
-        <div class="it-connection">
-            <strong>Connection to Information Technology:</strong>
-            This is the core foundation of software engineering and IT innovation. IT students act as builders when architecting databases, writing code, creating new digital products, and utilizing emerging technologies to engineer practical solutions to contemporary problems.
-        </div>
-
-
-        <div class="pictures">
-
-            <img src="images/builder1.jpg" alt="Builder and Innovator">
-
-            <img src="images/builder2.jpg" alt="Builder and Innovator">
-
-            <img src="images/builder3.jpg" alt="Builder and Innovator">
-
-            <img src="images/builder4.jpg" alt="Builder and Innovator">
-
-            <img src="images/builder5.jpg" alt="Builder and Innovator">
-
-        </div>
-
-    </div>
-
-
-    <!-- =========================
-         5. COMMUNICATOR
-    ========================== -->
-
-    <div class="section" id="communication">
-
-        <h2>
-            5. Efficient Professional and Effective Communicator
-        </h2>
-
-        <p class="description">
-            This attribute focuses on professionalism,
-            responsibility, confidence, and the ability to
-            communicate ideas clearly and effectively.
-        </p>
-
-        <div class="it-connection">
-            <strong>Connection to Information Technology:</strong>
-            Building technical systems requires seamless collaboration. IT specialists must translate complex technical concepts into clear language for clients, write precise system documentation, present project proposals, and maintain professional etiquette within agile development teams.
-        </div>
-
-
-        <div class="pictures">
-
-            <img src="images/communication1.jpg" alt="Effective Communicator">
-
-            <img src="images/communication2.jpg" alt="Effective Communicator">
-
-            <img src="images/communication3.jpg" alt="Effective Communicator">
-
-            <img src="images/communication4.jpg" alt="Effective Communicator">
-
-            <img src="images/communication5.jpg" alt="Effective Communicator">
-
-        </div>
-
-    </div>
-
-
-    <!-- =========================
-         6. GLOBAL-MINDED CITIZEN
-    ========================== -->
-
-    <div class="section" id="global">
-
-        <h2>
-            6. Social, Moral and Global-Minded Citizen
-        </h2>
-
-        <p class="description">
-            This attribute encourages students to become
-            responsible members of society who respect others,
-            understand global issues, and contribute positively
-            to their community.
-        </p>
-
-        <div class="it-connection">
-            <strong>Connection to Information Technology:</strong>
-            The internet connects the entire globe. Being a global-minded IT professional means adhering to global cybersecurity standards, respecting data privacy laws (such as GDPR), defending against cyber threats, and ensuring digital solutions are inclusive across different cultures and socio-economic backgrounds.
-        </div>
-
-
-        <div class="pictures">
-
-            <img src="images/global1.jpg" alt="Global-Minded Citizen">
-
-            <img src="images/global2.jpg" alt="Global-Minded Citizen">
-
-            <img src="images/global3.jpg" alt="Global-Minded Citizen">
-
-            <img src="images/global4.jpg" alt="Global-Minded Citizen">
-
-            <img src="images/global5.jpg" alt="Global-Minded Citizen">
-
-        </div>
-
-    </div>
-
-
-    <!-- =========================
-         7. LIFELONG LEARNER
-    ========================== -->
-
-    <div class="section" id="learner">
-
-        <h2>
-            7. Transformed Lifelong Learner
-        </h2>
-
-        <p class="description">
-            This attribute represents continuous learning,
-            personal growth, adaptability, and the willingness
-            to develop new knowledge and skills throughout life.
-        </p>
-
-        <div class="it-connection">
-            <strong>Connection to Information Technology:</strong>
-            Information Technology evolves faster than almost any other industry. Programming languages, frameworks, and tools rapidly change; being a lifelong learner guarantees that an IT specialist continuously upskills, adapts to innovations like AI and cloud computing, and remains relevant.
-        </div>
-
-
-        <div class="pictures">
-
-            <img src="images/learner1.jpg" alt="Lifelong Learner">
-
-            <img src="images/learner2.jpg" alt="Lifelong Learner">
-
-            <img src="images/learner3.jpg" alt="Lifelong Learner">
-
-            <img src="images/learner4.jpg" alt="Lifelong Learner">
-
-            <img src="images/learner5.jpg" alt="Lifelong Learner">
-
-        </div>
-
-    </div>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
+    <!-- FOOTER -->
     <footer>
-
-        <p>
-            University of Batangas - Lipa City Campus
-        </p>
-
-        <p>
-            Core Values and Attributes
-        </p>
-
+        <p>University of Batangas - Lipa City Campus</p>
+        <p>BS Information Technology | Section 1B</p>
     </footer>
-
 
 </body>
 </html>
